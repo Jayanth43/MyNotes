@@ -1,0 +1,1369 @@
+ 
+
+ 
+
+======================== 
+
+Why to learn Linux OS ? 
+
+======================== 
+
+ 
+
+1) In Real-Time, all devops tools will be installed on linux machines. 
+
+ 
+
+Ex: jenkins, docker, k8s, jfrog, nexus, sonar, ELK... 
+
+ 
+
+2) Database servers will be instaled on Linux machines. 
+
+ 
+
+3) Application deployment will happen in linux machine 
+
+ 
+
+4) Application log files will be stored in linux machine 
+
+ 
+
+ 
+
+========================= 
+
+What is Operating System 
+
+========================= 
+
+ 
+
+=> OS is a software which acts as mediator between users and computers. 
+
+ 
+
+=> Without OS we can't use any computer. 
+
+ 
+
+=> We have several Operating systems in the market. 
+
+ 
+
+ Ex: Windows, Unix, Linux, Mac, android, IOS etc.. 
+
+ 
+
+============= 
+
+Windows OS  
+
+============= 
+
+ 
+
+=> Developed by Microsoft Company. 
+
+ 
+
+=> It is Licensed software. 
+
+ 
+
+=> Single user based OS. At a time only one person can use windows Machine. 
+
+ 
+
+=> Security is very less (anti virus s/w required) 
+
+ 
+
+=> IT is GUI based OS. 
+
+ 
+
+=> It is recommended for personal use. 
+
+ 
+
+Ex: watch movies, play games, prepare docs, online classes, coding etc.... 
+
+ 
+
+ 
+
+=========== 
+
+Linux OS 
+
+=========== 
+
+ 
+
+=> Community based OS (free and open source) 
+
+ 
+
+=> Multi User based OS. Multiple users can access single linux machine at a time. 
+
+ 
+
+=> Security is very high. No need of anti-virus s/w. 
+
+ 
+
+=> Linux supports both GUI and CLI. 
+
+ 
+
+GUI - Graphical user interface 
+
+ 
+
+CLI - Commandline interface 
+
+ 
+
+=> Highly recommended for business systems. 
+
+ 
+
+Ex: DB servers, App servers, DevOps tools... 
+
+ 
+
+ 
+
+============== 
+
+Linux History 
+
+============== 
+
+ 
+
+=> Linux OS developed by "Linus torvalds" in 1991. 
+
+ 
+
+=> Linus Torvalds used 'Minux OS' to develop LInux OS. 
+
+ 
+
+(Li)nus Torvalds + Mi(nux) =  Linux 
+
+ 
+
+=> He released 'Linux OS' into market with free of cost.	 
+
+ 
+
+=> Many companies downloaded 'linux os source code' and modified according to their requriement and released into market with different names those are called as Linux Distributions. 
+
+ 
+
+Ex: Ubuntu, Red hat, Cent OS, Amazon Linux, Kali, SUSE, Fedora ... 
+
+ 
+
+ 
+
+================== 
+
+Environment Setup 
+
+================== 
+
+ 
+
+1) Create AWS Free Tier Account 
+
+ 
+
+2) Create Linux Virtual machine in AWS cloud using EC2 service.	 
+
+ 
+
+3) Connect with Linux VM using SSH Client software. 
+
+ 
+
+Ex: Git Bash, MobaXterm, PuTTy, WinScp 
+
+ 
+
+ 
+
+@@@@ Reference Videos : https://www.ashokit.in/yt-content/cloud-tutorials  @@@@@@ 
+
+ 
+
+ 
+
+-------------------------------------------------------------------------------------------- 
+
+ 
+
+ðŸ‘‰ AWS Free Tier Account Setup : https://www.youtube.com/watch?v=xi-JDeceLeI 
+
+ 
+
+ðŸ‘‰ How to make AWS Bill as Zero : https://www.youtube.com/watch?v=PvSGOheevL4&t=4s 
+
+ 
+
+ðŸ‘‰ Connect with Linux VM Using Git Bash : https://www.youtube.com/watch?v=JMlQaTXvw5o 
+
+ 
+
+ðŸ‘‰ Connect with Linux VM using MobaXterm : https://www.youtube.com/watch?v=uI2iDk8iTps 
+
+ 
+
+ðŸ‘‰ Connect with Linux VM using PuTTY : https://www.youtube.com/watch?v=GXc_bxmP0AA  
+
+ 
+
+--------------------------------------------------------------------------------------------- 
+
+ 
+
+ 
+
+==================== 
+
+Linux Architecture 
+
+==================== 
+
+ 
+
+1) Shell 
+
+ 
+
+2) Kernel 
+
+ 
+
+3) Hardware components 
+
+ 
+
+================ 
+
+What is shell ? 
+
+================ 
+
+ 
+
+=> Shell is a mediator between users and kernel 
+
+ 
+
+=> When we execute any linux command then shell will convert that command into kernel understandable format. 
+
+ 
+
+=================== 
+
+What is kernel ? 
+
+=================== 
+
+ 
+
+=> Kernel is mediator between shell and hardware components 
+
+ 
+
+=> Kernel is core component of Linux OS. 
+
+ 
+
+=> Kernel is responsible to convert shell given instructions into system hardware components. 
+
+ 
+
+user/app ---> linux cmd ---> shell ---> kernel ---> linux hardware 
+
+ 
+
+ 
+
+================== 
+
+Linux File System 
+
+================== 
+
+ 
+
+=> In linux vm everything will be represented as a file only 
+
+ 
+
+=> Linux machine entryponint is (/) root 
+
+ 
+
+/ (root) 
+
+ 
+
+/home 
+
+/bin 
+
+/etc 
+
+/opt 
+
+/usr 
+
+/temp 
+
+ 
+
+===============================================	 
+
+ 
+
+/home : It contains users home directories 
+
+ 
+
+Note: For every user account, one home directory will be available like below. 
+
+ 
+
+ashok : /home/ashok/ 
+
+ 
+
+raju : /home/raju/ 
+
+ 
+
+anil : /home/anil/ 
+
+ 
+
+ec2-user : /home/ec2-user/ 
+
+ 
+
+ 
+
+/etc : It contains system related configuration files	 
+
+ 
+
+/opt : It is used to install software packages 
+
+ 
+
+/usr : It is used to host software applications 
+
+ 
+
+/var : It is used to host static websites (html pages) 
+
+ 
+
+/bin : linux machines binaries 
+
+ 
+
+================ 
+
+Linux Commands 
+
+================ 
+
+ 
+
+whoami : display currently logged in username 
+
+ 
+
+pwd : print working directory 
+
+ 
+
+date : display current date 
+
+ 
+
+cal : display current month calendar 
+
+ 
+
+cal 2050 : display 2050 year calendar 
+
+ 
+
+===================================== 
+
+Working with Files and Directories 
+
+===================================== 
+
+ 
+
+cd : change directory 
+
+ 
+
+cd <dir-name> 
+
+ 
+
+cd .. 
+
+ 
+
+ls : list files		 
+
+ 
+
+ls 
+
+ 
+
+ls -l  : alphabetical order 
+
+ 
+
+ls -lr  : reverse of alphabetical order 
+
+ 
+
+ls -lt : latest files on top 
+
+ 
+
+ls -ltr : old files on top 
+
+ 
+
+ls -la : Display hidden files 
+
+ 
+
+ls -l <dir-name> : print given dir content 
+
+ 
+
+ 
+
+mkdir : To create directory 
+
+ 
+
+mkdir java  
+
+mkdir devops aws 
+
+ 
+
+rmdir : To remove directory (empty directories) 
+
+ 
+
+rmdir <dir-name> 
+
+ 
+
+touch : To create empty files 
+
+ 
+
+touch f1.txt 
+
+ 
+
+touch f2.txt f3.txt f4.txt 
+
+ 
+
+rm : To remove files and non-empty directory			 
+
+ 
+
+rm <file-name> 
+
+ 
+
+rm -rf <dir-name> 
+
+ 
+
+ 
+
+cat : create new file with data + append data to existing file + print file data 
+
+ 
+
+// create new file with data		 
+
+$ cat > f1.txt 
+
+ 
+
+// append data to existing file 
+
+$ cat >> f1.txt 
+
+ 
+
+// print file data from top to bottom 
+
+$ cat f1.txt 
+
+ 
+
+// print data with line nos 
+
+$ cat -n f1.txt 
+
+ 
+
+mv : rename files and directories + move from one location to another location 
+
+ 
+
+// rename 
+
+mv f1.txt f2.txt 
+
+ 
+
+// move f2 file to devops dir 
+
+mv f2.txt devops/		 
+
+ 
+
+cp : copy data from one file to another file 
+
+ 
+
+cp f1.txt f3.txt 
+
+ 
+
+ 
+
+============= 
+
+Text Filters 
+
+============= 
+
+ 
+
+head : To print first 10 lines of the file 
+
+ 
+
+head f1.txt 
+
+ 
+
+head -n 15 f1.txt 
+
+ 
+
+head -n 30 f1.txt 
+
+ 
+
+tail : To print last 10 lines of the file 
+
+ 
+
+tail f1.txt 
+
+ 
+
+tail -n 20 f1.txt 
+
+ 
+
+// to watch live log msgs 
+
+tail -f ashokit.log 
+
+ 
+
+grep : global regular expression print 
+
+ 
+
+=> It is used to search for keywords in the file 
+
+ 
+
+// print lines which contains given keyword 
+
+grep 'keyword' f1.txt 
+
+ 
+
+// ignore case sensitive 
+
+grep -i 'keyword' f1.txt 
+
+ 
+
+ 
+
+# check for exceptins in last 100 lines of the file 
+
+ 
+
+tail -n 100 ashokit.log | grep -i 'exception' 
+
+ 
+
+============= 
+
+Text Editors 
+
+============= 
+
+ 
+
+=> We will use 'vi' (visual editor) 
+
+ 
+
+$ vi <file-name> 
+
+ 
+
+Note: If file already available it open existing file only, if file not available it will create and open that file. 
+
+ 
+
+=> Visual Editor works in 3 modes 
+
+ 
+
+1) command mode (read file data) 
+
+ 
+
+2) insert mode (press 'i' in keyword) 
+
+ 
+
+3) esc mode (press 'esc' in keyboard) 
+
+ 
+
+=> When we are in esc mode we can save and close the file using below options 
+
+ 
+
+To Save changes and close file => press :wq 
+
+ 
+
+To Ignore changes and close file => press :q!	 
+
+ 
+
+==================== 
+
+Networking Commands	 
+
+==================== 
+
+ 
+
+ifconfig : To get ip address of machine 
+
+ 
+
+wget : To download files from internet 
+
+ 
+
+syntax : wget <url> 
+
+ 
+
+Ex : wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.zip 
+
+ 
+
+curl : To send HTTP request to URL 
+
+ 
+
+syntax : curl <URL> 
+
+ 
+
+Ex : curl https://dummyjson.com/quotes/101 
+
+ 
+
+ping : To check network connectivity 
+
+ 
+
+================ 
+
+User Management	 
+
+================ 
+
+ 
+
+-> Linux OS is a multi user based OS. 
+
+ 
+
+-> Multiple Users can connect with one linux vm at a time. 
+
+ 
+
+Note: When we create linux vm using "Amazon Linux" AMI we will get 'ec2-user' as a default user with sudo priviliges. 
+
+ 
+
+SUDO : Super user doing operation 
+
+ 
+
+ 
+
+# check users available 
+
+cat /etc/passwd 
+
+ 
+
+# create new user  
+
+ 
+
+Syntax : sudo useradd <username> 
+
+ 
+
+Ex : sudo useradd john 
+
+ 
+
+# set password for user  
+
+ 
+
+Syntax : sudo passwd <username> 
+
+ 
+
+Ex : sudo passwd john 
+
+ 
+
+ 
+
+================================ 
+
+What is sudoers file in linux ? 
+
+================================ 
+
+ 
+
+Note: To give sudo priviliges for the users we need to add them in sudoers file. 
+
+ 
+
+# open sudoers file 
+
+$ sudo visudo 
+
+ 
+
+Note: Configure user like below (just below root user) 
+
+ 
+
+john    ALL=(ALL)       ALL 
+
+ 
+
+Note: After adding user, close that file using "CTRL + X + Y + Enter" 
+
+ 
+
+======================================================== 
+
+How to enable password based authentication in linux ? 
+
+======================================================== 
+
+ 
+
+=> In Linux VM by default PasswordAuthentication is disabled. 
+
+ 
+
+=> If we want to connect with Linux vm using  username and password we need to enable that. 
+
+ 
+
+Note: We will enable that in SSHD config file. 
+
+ 
+
+# open sshd_config file 
+
+sudo vi /etc/ssh/sshd_config 
+
+ 
+
+Note : In that file find PasswordAuthentication property. Its default value is no, change to yes. 
+
+ 
+
+Note: After changing, save that file and close it by using :wq + Enter 
+
+ 
+
+# restart sshd service  
+
+sudo service sshd restart 
+
+ 
+
+# exit from the machine  
+
+exit 
+
+ 
+
+# execute ssh command 
+
+ssh username@public-ip 
+
+ 
+
+================== 
+
+File Permissions  
+
+================== 
+
+ 
+
+=> File permissions are divided into 3 types  
+
+ 
+
+a) read (r) 
+
+ 
+
+b) write (w) 
+
+ 
+
+c) execute (x) 
+
+ 
+
+=> File permissions will be represented like below 
+
+ 
+
+ex :  
+
+-rwxrwxrwx f1.txt 
+
+drwxrwxrwx java 
+
+ 
+
+=> File permissions containts total 9 characters 
+
+ 
+
+=> First 3 characters will represent owner permissions (the user who created that file) 
+
+ 
+
+=> Middle 3 characters will represent group permissions. 
+
+ 
+
+=> Last 3 characters will represent other users permissions. 
+
+ 
+
+u ---> user (owner) 
+
+ 
+
+g ---> group 
+
+ 
+
+o ---> others 
+
+ 
+
+Ex: 
+
+ 
+
+rw-rw-r-x  f1.txt 
+
+ 
+
+user : read + write 
+
+ 
+
+group : read + write 
+
+ 
+
+others : read + execute 
+
+ 
+
+rwx------ f2.txt  
+
+ 
+
+owner : read + write + execute  
+
+group : Nothing 
+
+Others: Nothing 
+
+ 
+
+ 
+
+=> To add or remove file permissions we will use 'chmod' command. 
+
+ 
+
++   ===> To add 
+
+ 
+
+-   ===> To remove 
+
+ 
+
+# add execute permission for user(owner) 
+
+chmod u+x f1.txt 
+
+ 
+
+# remove write permission for user(owner) 
+
+chmod u-w f1.txt 
+
+ 
+
+# add write and execute permissions for group 
+
+chmod g+wx f1.txt 
+
+ 
+
+# remove read permission for others 
+
+chmod o-r f1.txt 
+
+ 
+
+ 
+
+=> We can represent file permissions using numeric numbers also. 
+
+ 
+
+ 
+
+0 ==> No permission 
+
+ 
+
+1 ==> Execute 
+
+ 
+
+2 ==> Write 
+
+ 
+
+3 ==> (2 + 1) => Write + Execute 
+
+ 
+
+4 ==> Read 
+
+ 
+
+5 ==> (4 + 1) => Read + Execute 
+
+ 
+
+6 ==> (4 + 2) => Read + Write 
+
+ 
+
+7 ==> (4 + 2 + 1) => Read + Write + Execute 
+
+ 
+
+# ugo + x 
+
+chmod 111 f1.txt 
+
+ 
+
+# u+x  g+w o+wx 
+
+chmod 123 f1.txt 
+
+ 
+
+# u+r g+rx o+rw 
+
+chmod 456 f1.txt 
+
+ 
+
+# ugo + rwx 
+
+chmod 777 f1.txt 
+
+ 
+
+# u-rwx g-rwx o+rwx  
+
+chmod 7 f1.txt 
+
+ 
+
+====================================== 
+
+How to change ownership of the file ? 
+
+====================================== 
+
+ 
+
+=> using chown command we can change ownership  
+
+ 
+
+$ sudo chown ashok f1.txt 
+
+ 
+
+ 
+
+============================================= 
+
+How to find the location of files in linux ? 
+
+============================================= 
+
+ 
+
+=> in linux we can use 'find' command to search file paths. 
+
+ 
+
+# search for the files which are having name as f1.txt 
+
+sudo find /home -name f1.txt 
+
+ 
+
+# search for empty files inside /home 
+
+sudo find /home -type f -empty 
+
+ 
+
+# search for empty directories inside /home 
+
+sudo find /home -type d -empty 
+
+ 
+
+===================== 
+
+process management 
+
+===================== 
+
+ 
+
+Process management in Linux involves controlling and monitoring the execution of programs (processes) on the system.  
+
+ 
+
+# display processing running with PID 
+
+$ ps aux 
+
+ 
+
+Note: Every process will have process id (PID). 
+
+ 
+
+# kill process 
+
+kill <PID> 
+
+ 
+
+# terminate process immediatley (forcefully) 
+
+kill -9 <PID> 
+
+ 
+
+============================================= 
+
+How to change hostname in vm (temporarly) ? 
+
+============================================= 
+
+ 
+
+# set hostname 
+
+$ sudo hostname <new-name> 
+
+ 
+
+# re-start session  
+
+$ exit  
+
+ 
+
+Note: connect back to vm then we can see configured hostname 
+
+ 
+
+ 
+
+================== 
+
+Package Managers 
+
+================== 
+
+ 
+
+Package : A software  
+
+ 
+
+=> Package managers are used to manage softwares installation in linux machines. 
+
+ 
+
+=> Package Managers and Package Names are specific to linux distribution. 
+
+ 
+
+Amazon linux + Red hat + Cent os :: yum is package manager 
+
+ 
+
+Ubuntu + Debian :: apt is package manager 
+
+ 
+
+# install git client software 
+
+ 
+
+sudo yum install git -y 
+
+git --version 
+
+whereis git 
+
+ 
+
+ 
+
+# install maven 
+
+ 
+
+sudo yum install maven -y 
+
+mvn -version 
+
+whereis mvn 
+
+ 
+
+# install java latest version  
+
+ 
+
+sudo yum install java -y 
+
+java -version 
+
+whereis java 
+
+ 
+
+# install java 17v  
+
+sudo yum install -y java-17-amazon-corretto-devel 
+
+ 
+
+# install java 11v  
+
+sudo yum install -y java-11-amazon-corretto-devel 
+
+ 
+
+# Switch Between Multiple Java Versions 
+
+sudo alternatives --config java 
+
+ 
+
+ 
+
+============================= 
+
+Webserver Setup in Linux VM 
+
+============================= 
+
+ 
+
+=> Webserver is a software which is used to run websites / web applications. 
+
+ 
+
+=> Website means collection of web pages. 
+
+ 
+
+ex: login page, register page, contact us page, about us page.. 
+
+ 
+
+=> Websites are divided into 2 types 
+
+ 
+
+1) static website 
+
+ 
+
+2) dynamic website 
+
+ 
+
+=> The website which gives same response for every user is called as static website. 
+
+ 
+
+ex: news websites (www.eenadu.com, www.timesofindia.com) 
+
+ 
+
+=> The website which gives response based on logged in user is called as dynamic website. 
+
+ 
+
+Ex : www.gmail.com 
+
+ 
+
+=> To run static websites we can use 'httpd' as webserver. 
+
+ 
+
+=> To run dynamic websites we can use 'tomcat, jboss, weblogic as webservers. 
+
+ 
+
+ 
+
+# install httpd webserver 
+
+sudo yum install httpd -y 
+
+ 
+
+# check httpd status 
+
+sudo service httpd status 
+
+ 
+
+# start httpd server 
+
+sudo service httpd start 
+
+ 
+
+Note: httpd webserver runs on http protocol with 80 port number. 
+
+ 
+
+Note: To access our webserver we need to enable http protocol in Ec2 vm security group inbound rules. 
+
+ 
+
+=> We can access our webserver using ec2-vm public ip. 
+
+ 
+
+# Navigate to website content directory 
+
+$ cd /var/www/html 
+
+ 
+
+# create index.html file with website content 
+
+$ sudo vi index.html 
+
+ 
+
+=> We can access our webserver using ec2-vm public ip. 
+
+ 
+
+ 
+
+=================================================================== 
+
+Assignment : Deploy SpringBoot web application in Linux Machine. 
+
+=================================================================== 
